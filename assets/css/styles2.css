@@ -126,8 +126,8 @@
     z-index: 9999;
     padding: 12px 24px;
     border-radius: 8px;
-    border: none;
-    background: rgb(255, 230, 230);
+    border: 1px solid rgb(230, 230, 230);
+    background: #ffffff;
     color: black;
     font-size: 14px;
     text-decoration: none;
@@ -138,7 +138,7 @@
 }
 
 .back-button:hover{
-    background: rgb(255, 210, 210);
+    background: rgb(255, 230, 230);
 }
 
 

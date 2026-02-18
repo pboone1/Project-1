@@ -1599,6 +1599,367 @@
     font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
 }
+
+/* Back button classes matching next button colors */
+.dad-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.dad-back-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+.mom-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.mom-back-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+.dylan-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.dylan-back-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+.kacie-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.kacie-back-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+.mompop-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.mompop-back-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+.lexi-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.lexi-back-button:hover{
+    background: #bec6ff;
+}
+
+.sophia-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.sophia-back-button:hover{
+    background: #bec6ff;
+}
+
+.molly-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.molly-back-button:hover{
+    background: #bec6ff;
+}
+
+.noah-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.noah-back-button:hover{
+    background: #bec6ff;
+}
+
+.ryan-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.ryan-back-button:hover{
+    background: #bec6ff;
+}
+
+.luke-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.luke-back-button:hover{
+    background: #bec6ff;
+}
+
+.ava-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.ava-back-button:hover{
+    background: #ffb67d;
+}
+
+.cecily-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cecily-back-button:hover{
+    background: #ffb67d;
+}
+
+.daya-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.daya-back-button:hover{
+    background: #ffb67d;
+}
+
+.meach-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.meach-back-button:hover{
+    background: #ffb67d;
+}
+
+.mosso-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.mosso-back-button:hover{
+    background: #ffb67d;
+}
+
+.tatum-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.tatum-back-button:hover{
+    background: #ffb67d;
+}
+
+.college-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.college-back-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+.hometown-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.hometown-back-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+.family-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.family-back-button:hover{
+    background: rgb(255, 210, 210);
+}
 /* AVAAA STYLES------------------------------------------------------------------------------ */
 
    .ava-page{
@@ -2738,8 +3099,8 @@
     z-index: 9999;
     padding: 12px 24px;
     border-radius: 8px;
-    border: none;
-    background: rgb(255, 230, 230);
+    border: 1px solid rgb(230, 230, 230);
+    background: #ffffff;
     color: black;
     font-size: 14px;
     text-decoration: none;
@@ -2750,5 +3111,5 @@
 }
 
 .back-button:hover{
-    background: rgb(255, 210, 210);
+    background: rgb(255, 230, 230);
 }
