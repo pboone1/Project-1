@@ -1,0 +1,2715 @@
+*{
+ /*   margin:40px;*/
+    text-align: center;
+
+}
+
+.background{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.text{
+    display: inline-block;
+    justify-content: center;
+    align-content: baseline;
+}
+
+.Title{
+    font-family:'Gill Sans';
+    letter-spacing: 1px;
+    font-size:36px;
+}
+
+/* DADDD STYLES------------------------------------------------------------------------------ */
+
+.dad-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.dad-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/dad-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.dad-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.dad-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.dad-image-wrapper{
+    width: 100%;
+    background: rgb(255, 230, 230);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.dad-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dad-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dad-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.dad-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.dad-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #333;
+    text-align: left;
+}
+
+.dad-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.dad-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.dad-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.dad-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+
+
+/* MOMMM STYLES------------------------------------------------------------------------------ */
+
+   .mom-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.mom-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/mom-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.mom-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.mom-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.mom-image-wrapper{
+    width: 100%;
+    background: rgb(255, 230, 230);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.mom-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mom-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mom-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.mom-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.mom-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.mom-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.mom-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.mom-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.mom-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+
+
+
+/* DYLAN STYLES------------------------------------------------------------------------------ */
+
+   .dylan-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.dylan-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/dylan-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.dylan-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.dylan-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.dylan-image-wrapper{
+    width: 100%;
+    background: rgb(255, 230, 230);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.dylan-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dylan-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dylan-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.dylan-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.dylan-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.dylan-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.dylan-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.dylan-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.dylan-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+
+
+
+/* KACIE STYLES------------------------------------------------------------------------------ */
+
+.kacie-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.kacie-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/kacie-collage.jpg);
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.kacie-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.kacie-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.kacie-image-wrapper{
+    width: 100%;
+    background: rgb(255, 230, 230);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.kacie-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.kacie-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kacie-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.kacie-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.kacie-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #333;
+    text-align: left;
+}
+
+.kacie-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.kacie-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.kacie-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.kacie-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+
+
+
+/* MOMPOP STYLES----------------------------------------------------------------------------- */
+
+   .mompop-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.mompop-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/mommom-collage.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.mompop-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.mompop-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.mompop-image-wrapper{
+    width: 100%;
+    background: rgb(255, 230, 230);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.mompop-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mompop-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mompop-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.mompop-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.mompop-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #333;
+    text-align: left;
+}
+
+.mompop-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.mompop-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.mompop-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.mompop-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+
+/* LEXII STYLES------------------------------------------------------------------------------ */
+
+   .lexi-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.lexi-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/lexi-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.lexi-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.lexi-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.lexi-image-wrapper{
+    width: 100%;
+    background: #ebedff;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.lexi-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lexi-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lexi-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.lexi-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.lexi-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #333;
+    text-align: left;
+}
+
+.lexi-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.lexi-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.lexi-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.lexi-next-button:hover{
+    background: #bec6ff;
+}
+
+
+/* SOPHIA STYLES----------------------------------------------------------------------------- */
+   .sophia-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.sophia-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/sophia-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.sophia-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.sophia-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.sophia-image-wrapper{
+    width: 100%;
+    background: #ebedff;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.sophia-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sophia-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sophia-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.sophia-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.sophia-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.sophia-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sophia-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.sophia-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.sophia-next-button:hover{
+    background: #bec6ff;
+}
+
+
+
+
+
+/* MOLLY STYLES------------------------------------------------------------------------------ */
+
+   .molly-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.molly-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/molly-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.molly-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.molly-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.molly-image-wrapper{
+    width: 100%;
+    background: #ebedff;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.molly-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.molly-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.molly-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.molly-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.molly-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.molly-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.molly-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.molly-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.molly-next-button:hover{
+    background: #bec6ff;
+}
+
+
+
+
+
+
+/* NOAH STYLES------------------------------------------------------------------------------ */
+
+   .noah-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.noah-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/noah-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.noah-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.noah-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.noah-image-wrapper{
+    width: 100%;
+    background: #ebedff;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.noah-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.noah-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.noah-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.noah-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.noah-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.noah-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.noah-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.noah-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.noah-next-button:hover{
+    background: #bec6ff;
+}
+
+
+
+/* RYAN STYLES------------------------------------------------------------------------------ */
+
+   .ryan-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.ryan-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/ryan-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.ryan-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.ryan-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.ryan-image-wrapper{
+    width: 100%;
+    background: #ebedff;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.ryan-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ryan-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ryan-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.ryan-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.ryan-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.ryan-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.ryan-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.ryan-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.ryan-next-button:hover{
+    background: #bec6ff;
+}
+
+
+
+
+
+/* LUKE STYLES------------------------------------------------------------------------------ */
+
+   .luke-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.luke-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/luke-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.luke-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.luke-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.luke-image-wrapper{
+    width: 100%;
+    background: #ebedff;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.luke-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.luke-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.luke-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.luke-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.luke-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.luke-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.luke-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.luke-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ebedff;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.luke-next-button:hover{
+    background: #bec6ff;
+}
+
+
+
+
+
+/* ABBY STYLES------------------------------------------------------------------------------ */
+
+   .abby-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.abby-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/abby-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.abby-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.abby-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.abby-image-wrapper{
+    width: 100%;
+    background: #ffd9ba;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.abby-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.abby-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.abby-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.abby-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.abby-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.abby-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.abby-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.abby-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.abby-next-button:hover{
+    background: #ffb67d;
+}
+
+
+/* AVAAA STYLES------------------------------------------------------------------------------ */
+
+   .ava-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.ava-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/ava-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.ava-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.ava-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.ava-image-wrapper{
+    width: 100%;
+    background: #ffd9ba;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.ava-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ava-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ava-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.ava-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.ava-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.ava-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.ava-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.ava-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.ava-next-button:hover{
+    background: #ffb67d;
+}
+
+
+/* CECILY STYLES----------------------------------------------------------------------------- */
+
+   .cecily-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.cecily-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/cecily-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.cecily-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cecily-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.cecily-image-wrapper{
+    width: 100%;
+    background: #ffd9ba;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.cecily-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cecily-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cecily-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.cecily-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.cecily-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.cecily-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.cecily-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.cecily-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.cecily-next-button:hover{
+    background: #ffb67d;
+}
+
+
+/* DAYA STYLES------------------------------------------------------------------------------ */
+   .daya-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.daya-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/daya-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.daya-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.daya-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.daya-image-wrapper{
+    width: 100%;
+    background: #ffd9ba;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.daya-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.daya-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.daya-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.daya-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.daya-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.daya-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.daya-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.daya-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.daya-next-button:hover{
+    background: #ffb67d;
+}
+
+
+
+
+/* MEACH STYLES------------------------------------------------------------------------------ */
+
+   .meach-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.meach-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/meach-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.meach-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.meach-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.meach-image-wrapper{
+    width: 100%;
+    background: #ffd9ba;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.meach-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.meach-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.meach-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.meach-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.meach-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.meach-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.meach-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.meach-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.meach-next-button:hover{
+    background: #ffb67d;
+}
+
+
+
+/* MOSSO STYLES------------------------------------------------------------------------------ */
+
+   .mosso-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.mosso-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/mosso-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.mosso-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.mosso-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.mosso-image-wrapper{
+    width: 100%;
+    background: #ffd9ba;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.mosso-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mosso-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mosso-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.mosso-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.mosso-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.mosso-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.mosso-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.mosso-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.mosso-next-button:hover{
+    background: #ffb67d;
+}
+
+
+/* TATUM STYLES------------------------------------------------------------------------------ */
+
+   .tatum-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.tatum-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/tatum-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.tatum-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.tatum-image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.tatum-image-wrapper{
+    width: 100%;
+    background: #ffd9ba;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.tatum-main-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tatum-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tatum-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:55px;
+}
+
+.tatum-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.tatum-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: black;
+    text-align: left;
+}
+
+.tatum-footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tatum-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.tatum-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.tatum-next-button:hover{
+    background: #ffb67d;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    comment {
+    padding:10px;
+    text-align: left;
+    }
+    title{
+        letter-spacing: 1.5px;
+    }
+}
+
+/*
+.kacie{
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -575px; 
+    margin-left: -1000px;
+    z-index: -1;
+      }
+      
+.mompop{
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -575px; 
+    margin-left: -1000px; 
+    z-index: -1;
+    }
+
+
+
+
+
+/* COLLEGE STYLES---------------------------------------------------------------------------- */
+
+   .college-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.college-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/college-back.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.college-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    /*grid-template-columns: 30% 50%;*/
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.college-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.college-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    /*text-align: left;*/
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:35px;
+}
+
+.college-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.college-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #333;
+    text-align: left;
+}
+
+.college-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.college-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.college-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.college-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+
+/* HOME STYLES------------------------------------------------------------------------------ */
+
+   .hometown-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.hometown-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/hometown-back.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.hometown-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    /*grid-template-columns: 30% 50%;*/
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hometown-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.hometown-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    /*text-align: left;*/
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:35px;
+}
+
+.hometown-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: center;
+    max-width: 100%;
+}
+
+.hometown-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #333;
+    text-align: left;
+}
+
+.hometown-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.hometown-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.hometown-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.hometown-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
+/* FAMILY STYLES----------------------------------------------------------------------------- */
+
+   .family-page{
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.family-page::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/photos/family-back.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.family-grid-container{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    /*grid-template-columns: 30% 50%;*/
+    gap: 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.family-text-column{
+    padding: 40px 90px;
+    text-align: left;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.family-name{
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: black;
+    /*text-align: left;*/
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom:35px;
+}
+
+.family-text{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    color:black;
+    text-align: left;
+    max-width: 100%;
+}
+
+.family-song{
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    color: #333;
+    text-align: left;
+}
+
+.family-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.family-audio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    flex: 1;
+}
+
+.family-next-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 230, 230);
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-left: 20px;
+}
+
+.family-next-button:hover{
+    background: rgb(255, 210, 210);
+}
+
