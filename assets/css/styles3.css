@@ -1581,6 +1581,24 @@
 }
 
 
+.abby-back-button:hover{
+    background: #ffb67d;
+}
+
+.abby-back-button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #ffd9ba;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-family: "Gill Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+}
 /* AVAAA STYLES------------------------------------------------------------------------------ */
 
    .ava-page{
