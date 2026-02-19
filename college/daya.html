@@ -20,7 +20,7 @@
                         Daya is one of the most beautiful people I have ever met, both inside and out. She radiates kindness to all of those around her. She is incredibly humble and talented. She has such a big heart and loves all of her friends so deeply. She became one of my first friends in our foundation studios and I would not trade her for the world. Her smile is infectious and I am lucky to know her.
                     </p>
                     <p class="daya-song">
-                        daya's song: pick a song
+                        daya's song: virginia beach by drake
                     </p>
                     <div class="daya-footer">
                         <a class="daya-back-button" href="cecily.html">back</a>
@@ -30,9 +30,31 @@
                     </div>
                 </div>
             </div>
-            <audio class="daya-audio" controls autoplay>
+            <audio class="daya-audio audio-no-controls" autoplay>
                 <source src="/assets/audio/daya-audio.mp3" type="audio/mpeg">
             </audio>
+            <button type="button" class="audio-play-pause-btn daya-audio-btn" aria-label="Pause">
+                <span class="play-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+                <span class="pause-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg></span>
+            </button>
         </div>
+        <script>
+        (function(){
+            var btn = document.querySelector('.daya-audio-btn');
+            var audio = document.querySelector('.daya-audio');
+            if (!btn || !audio) return;
+            function updateBtn() {
+                var playing = !audio.paused;
+                btn.classList.toggle('playing', playing);
+                btn.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+            }
+            btn.addEventListener('click', function() {
+                if (audio.paused) audio.play(); else audio.pause();
+            });
+            audio.addEventListener('play', updateBtn);
+            audio.addEventListener('pause', updateBtn);
+            updateBtn();
+        })();
+        </script>
     </body>
 </html>

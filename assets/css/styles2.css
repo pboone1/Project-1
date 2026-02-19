@@ -2,6 +2,10 @@
        text-align: center;
    }
 
+body {
+    text-transform: lowercase;
+}
+
 /* =========================
    OVERVIEW page specific styles
    ========================= */
@@ -91,13 +95,60 @@
 }
 
 
+/* Shared audio play/pause button for overview */
+audio.audio-no-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.audio-play-pause-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-shrink: 0;
+}
+.audio-play-pause-btn .play-icon,
+.audio-play-pause-btn .pause-icon { display: none; }
+.audio-play-pause-btn.playing .pause-icon,
+.audio-play-pause-btn:not(.playing) .play-icon { display: block; }
+.audio-play-pause-btn .play-icon svg,
+.audio-play-pause-btn .pause-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+.overview-audio-btn {
+    background: rgb(255, 230, 230);
+    color: black;
+}
+.overview-audio-btn:hover {
+    background: rgb(255, 210, 210);
+}
+
 .overview-audio{
     position: fixed;
-    bottom: 20px;
-    right: 725px;
-    z-index: 10;
-    opacity: 0.7;
-    flex: 1;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .overview-next-button{
@@ -121,8 +172,8 @@
 
 .back-button{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
     z-index: 9999;
     padding: 12px 24px;
     border-radius: 8px;
@@ -141,7 +192,79 @@
     background: rgb(255, 230, 230);
 }
 
+/* Overview responsive */
+@media (max-width: 768px) {
+    .overview-page {
+        padding: 20px 16px;
+        align-items: flex-start;
+    }
+    .overview-text-column {
+        padding: 48px 20px 24px;
+    }
+    .overview-name {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+    .overview-text {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .overview-song {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+    .overview-footer {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 16px;
+    }
+    .back-button {
+        top: 12px;
+        left: 12px;
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    .audio-play-pause-btn {
+        top: 12px;
+        right: 12px;
+        width: 46px;
+        height: 46px;
+    }
+    .audio-play-pause-btn .play-icon svg,
+    .audio-play-pause-btn .pause-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
 
+@media (max-width: 480px) {
+    .overview-page {
+        padding: 16px 12px;
+    }
+    .overview-text-column {
+        padding: 40px 16px 20px;
+    }
+    .overview-name {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .overview-text {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .overview-song {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+    .back-button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    .audio-play-pause-btn {
+        width: 44px;
+        height: 44px;
+    }
+}
 
 /*
 

@@ -4,6 +4,10 @@
 
 }
 
+body {
+    text-transform: lowercase;
+}
+
 .background{
     position: fixed;
     bottom: 0;
@@ -23,6 +27,75 @@
     font-family:'Gill Sans';
     letter-spacing: 1px;
     font-size:36px;
+}
+
+/* Shared audio play/pause button - hide native bar, use page next-button colors */
+audio.audio-no-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.audio-play-pause-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-shrink: 0;
+}
+.audio-play-pause-btn .play-icon,
+.audio-play-pause-btn .pause-icon {
+    display: none;
+}
+.audio-play-pause-btn.playing .pause-icon,
+.audio-play-pause-btn:not(.playing) .play-icon {
+    display: block;
+}
+.audio-play-pause-btn .play-icon svg,
+.audio-play-pause-btn .pause-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+/* Page-specific play button colors (match next-button) */
+.dad-audio-btn, .mom-audio-btn, .kacie-audio-btn, .dylan-audio-btn, .mompop-audio-btn,
+.college-audio-btn, .hometown-audio-btn, .family-audio-btn {
+    background: rgb(255, 230, 230);
+    color: black;
+}
+.dad-audio-btn:hover, .mom-audio-btn:hover, .kacie-audio-btn:hover, .dylan-audio-btn:hover,
+.mompop-audio-btn:hover, .college-audio-btn:hover, .hometown-audio-btn:hover, .family-audio-btn:hover {
+    background: rgb(255, 210, 210);
+}
+.lexi-audio-btn, .sophia-audio-btn, .molly-audio-btn, .noah-audio-btn, .ryan-audio-btn, .luke-audio-btn {
+    background: #ebedff;
+    color: black;
+}
+.lexi-audio-btn:hover, .sophia-audio-btn:hover, .molly-audio-btn:hover, .noah-audio-btn:hover,
+.ryan-audio-btn:hover, .luke-audio-btn:hover {
+    background: #bec6ff;
+}
+.abby-audio-btn, .ava-audio-btn, .cecily-audio-btn, .daya-audio-btn, .meach-audio-btn,
+.mosso-audio-btn, .tatum-audio-btn {
+    background: #ffd9ba;
+    color: black;
+}
+.abby-audio-btn:hover, .ava-audio-btn:hover, .cecily-audio-btn:hover, .daya-audio-btn:hover,
+.meach-audio-btn:hover, .mosso-audio-btn:hover, .tatum-audio-btn:hover {
+    background: #ffb67d;
 }
 
 /* DADDD STYLES------------------------------------------------------------------------------ */
@@ -1746,7 +1819,6 @@
 }
 
 .noah-back-button{
-    padding: 12px 24px;
     border-radius: 8px;
     border: none;
     background: #ebedff;
@@ -3094,8 +3166,8 @@
 
 .back-button{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 20px;
     z-index: 9999;
     padding: 12px 24px;
     border-radius: 8px;
@@ -3112,4 +3184,95 @@
 
 .back-button:hover{
     background: rgb(255, 230, 230);
+}
+
+/* =========================
+   Responsive: same layout, stacked on small screens
+   ========================= */
+@media (max-width: 768px) {
+    [class*="-page"] {
+        padding: 20px 16px;
+        align-items: flex-start;
+        min-height: 100vh;
+    }
+    [class*="grid-container"] {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 0;
+    }
+    [class*="text-column"] {
+        padding: 48px 15% 24px;
+    }
+    [class*="-name"] {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+    [class*="-text"] {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+    [class*="-song"] {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+    [class*="-footer"] {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 16px;
+    }
+    [class*="-footer"] a {
+        margin-left: 0;
+    }
+    [class*="image-wrapper"] {
+        padding: 16px;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .back-button {
+        top: 12px;
+        left: 12px;
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    .audio-play-pause-btn {
+        top: 12px;
+        right: 12px;
+        width: 46px;
+        height: 46px;
+    }
+    .audio-play-pause-btn .play-icon svg,
+    .audio-play-pause-btn .pause-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    [class*="-page"] {
+        padding: 16px 12px;
+    }
+    [class*="text-column"] {
+        padding: 40px 15% 20px;
+    }
+    [class*="-name"] {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    [class*="-text"] {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    [class*="-song"] {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+    .back-button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    .audio-play-pause-btn {
+        width: 44px;
+        height: 44px;
+    }
 }

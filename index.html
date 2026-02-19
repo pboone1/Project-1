@@ -5,7 +5,7 @@
         <link rel="stylesheet" href ="assets/css/styles.css"></link>
     </head>
     <body>
-
+        <div class="index-page-content" id="indexPageContent">
         <div class="text">
                 <div class="title">
                     <p>friends and family: the musical</p>
@@ -40,6 +40,23 @@
         <div class="masking-container">
             <h1 class="masked-text">my digital scrapbook</h1>
         </div>
+        </div>
 
+        <script>
+        (function() {
+            var overviewLink = document.querySelector('a[href="overview.html"]');
+            var content = document.getElementById('indexPageContent');
+            if (overviewLink && content) {
+                overviewLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    content.classList.add('slide-up');
+                    content.addEventListener('transitionend', function go() {
+                        content.removeEventListener('transitionend', go);
+                        window.location.href = 'overview.html';
+                    }, { once: true });
+                });
+            }
+        })();
+        </script>
     </body>
 </html>

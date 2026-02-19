@@ -31,10 +31,32 @@
                     </div>
                 </div>
             </div>
-            <audio class="noah-audio" controls autoplay>
+            <audio class="noah-audio audio-no-controls" autoplay>
                 <source src="/assets/audio/noah-audio.mp3" type="audio/mpeg">
             </audio>
+            <button type="button" class="audio-play-pause-btn noah-audio-btn" aria-label="Pause">
+                <span class="play-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+                <span class="pause-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg></span>
+            </button>
         </div>
+        <script>
+        (function(){
+            var btn = document.querySelector('.noah-audio-btn');
+            var audio = document.querySelector('.noah-audio');
+            if (!btn || !audio) return;
+            function updateBtn() {
+                var playing = !audio.paused;
+                btn.classList.toggle('playing', playing);
+                btn.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+            }
+            btn.addEventListener('click', function() {
+                if (audio.paused) audio.play(); else audio.pause();
+            });
+            audio.addEventListener('play', updateBtn);
+            audio.addEventListener('pause', updateBtn);
+            updateBtn();
+        })();
+        </script>
     </body>
 </html>
 
