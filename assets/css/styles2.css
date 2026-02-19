@@ -199,7 +199,7 @@ audio.audio-no-controls {
         align-items: flex-start;
     }
     .overview-text-column {
-        padding: 48px 20px 24px;
+        padding: 22vh 20px 24px;
     }
     .overview-name {
         font-size: 28px;
@@ -242,7 +242,7 @@ audio.audio-no-controls {
         padding: 16px 12px;
     }
     .overview-text-column {
-        padding: 40px 16px 20px;
+        padding: 18vh 16px 20px;
     }
     .overview-name {
         font-size: 24px;
